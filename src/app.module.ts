@@ -7,7 +7,7 @@ import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    // TypeOrmModule.forRoot(database)
+    TypeOrmModule.forRoot(database),
     ConfigModule.forRoot({
       isGlobal: true,
       envFilePath: '.env',
